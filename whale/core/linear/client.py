@@ -22,9 +22,9 @@ class LinearWhaleClient(WhaleClient):
                 integration_api_key=self.integration_api_key,
             )
 
-            ### FOR TESTING
-            SERVICE_URL = "http://0.0.0.0:8080"
-            ###
+            # ### FOR TESTING
+            # SERVICE_URL = "http://0.0.0.0:8080"
+            # ###
             response = requests.post(
                 f"{SERVICE_URL}/{LINEAR_ENDPOINT}", json=query_request.model_dump()
             )
