@@ -2,7 +2,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from whale.core.linear.base import (Comments, Cycle, Labels, Project, State,
+from whale.core.linear.models.base import (Comments, Cycle, Labels, Project, State,
                                     Status, User)
 
 
