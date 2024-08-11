@@ -1,5 +1,7 @@
-from whale.core.models.message import Message
 from pydantic import BaseModel
+
+from whale.core.models.message import Message
+
 
 class QueryRequest(BaseModel):
     messages: list[Message]

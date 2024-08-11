@@ -11,4 +11,3 @@ class Role(StrEnum):
 class Message(BaseModel):
     role: Role
     content: str
-

@@ -15,7 +15,5 @@ class WhaleClient(BaseModel, ABC):
     integration_api_key: str
 
     @abstractmethod
-    def query(
-        self, messages: list[Message]
-    ) -> Any:
+    def query(self, messages: list[Message]) -> Any:
         pass
