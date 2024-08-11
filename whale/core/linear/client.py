@@ -1,4 +1,3 @@
-from pydantic import BaseModel
 from whale.core._base import WhaleClient
 import logging
 from whale._utils._api_constants import LINEAR_ENDPOINT, SERVICE_URL
