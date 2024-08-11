@@ -20,7 +20,7 @@ def main():
         )
     ]
 
-    response: dict = linear_client.query(messages=messages)
+    response: list[dict] = linear_client.query(messages=messages)
     log.info(response)
     return response
 
