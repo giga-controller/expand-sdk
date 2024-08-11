@@ -1,6 +1,7 @@
 from whale.core._base import WhaleClient
 import logging
 from whale._utils._api_constants import LINEAR_ENDPOINT, SERVICE_URL
+from whale.core.models.message import Message
 from whale.core.models.request import QueryRequest
 import requests
 
@@ -9,9 +10,13 @@ log = logging.getLogger(__name__)
 
 class LinearWhaleClient(WhaleClient):
     
-    def query(self, input: QueryRequest) -> dict:
+    def query(self, messages: list[Message]) -> dict:
         try:
             log.info(f"Sending request to LinearWhaleClient")
+            
+            ### FOR TESTING
+            SERVICE_URL = "http://0.0.0.0:8080"
+            ###
             response = requests.post(
                 f"{SERVICE_URL}/{LINEAR_ENDPOINT}", json=input.model_dump()
             )
