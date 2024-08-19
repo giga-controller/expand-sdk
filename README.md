@@ -1,4 +1,4 @@
-# Whale
+# Expand
 
 ## Install Poetry
 
