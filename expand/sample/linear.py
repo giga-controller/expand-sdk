@@ -1,7 +1,7 @@
 import logging
 
-from whale.core.linear.client import LinearWhaleClient
-from whale.core.models.message import Message, Role
+from expand.core.linear.client import ExpandWhaleClient
+from expand.core.models.message import Message, Role
 import os
 from dotenv import load_dotenv
 
@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 
 def main():
-    linear_client = LinearWhaleClient(
+    linear_client = ExpandWhaleClient(
         # whale_api_key="your_whale_api_key", 
         whale_api_key=os.getenv("WHALE_API_KEY"), # Consider using environment variables
         # integration_api_key="your_linear_api_key",  

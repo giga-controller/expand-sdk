@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "whale-sdk"
+name = "expand-sdk"
 version = "0.1.0"
 description = ""
 authors = ["jinyang628 <chenjinyang4192@gmail.com>"]

@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from whale.core.models.message import Message
+from expand.core.models.message import Message
 
 
 class QueryRequest(BaseModel):

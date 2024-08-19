@@ -4,13 +4,13 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from whale.core.models.message import Message
+from expand.core.models.message import Message
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
 
-class WhaleClient(BaseModel, ABC):
+class ExpandClient(BaseModel, ABC):
     whale_api_key: str
     integration_api_key: str
 

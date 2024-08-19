@@ -2,16 +2,16 @@ import logging
 
 import requests
 
-from whale._utils._api_constants import LINEAR_ENDPOINT, SERVICE_URL
-from whale._utils._request import QueryRequest
-from whale.core._base import WhaleClient
-from whale.core.models.message import Message
+from expand._utils._api_constants import LINEAR_ENDPOINT, SERVICE_URL
+from expand._utils._request import QueryRequest
+from expand.core._base import ExpandClient
+from expand.core.models.message import Message
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
 
-class LinearWhaleClient(WhaleClient):
+class ExpandWhaleClient(ExpandClient):
 
     def query(self, messages: list[Message]) -> dict:
         try:
